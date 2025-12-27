@@ -4,6 +4,7 @@ import waiter from "../assets/waiter.jpg";
 import penguin from "../assets/penguin.jpg";
 import white from "../assets/white.jpg";
 import bike from "../assets/bike.jpg";
+import Navbar from "./Navbar";
 
 const images = [
   { name: tiger, bg: "#e48023" },
@@ -25,6 +26,7 @@ const Hero = () => {
           activeIndex !== null ? images[activeIndex].bg : "white",
       }}
     >
+      <Navbar />
       <div className="absolute blur-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white opacity-25 rounded-full h-4/5 w-4/5"></div>
       <div className="flex gap-6 w-full max-w-4xl">
         {images.map((src, index) => (
